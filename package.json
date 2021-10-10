@@ -11,8 +11,10 @@
   "author": "Quoc Duy Nguyen",
   "license": "ISC",
   "dependencies": {
+    "css-selector": "^0.1.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "style-selector": "^2.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -20,6 +22,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^6.3.0",
+    "style-loader": "^3.3.0",
     "webpack": "^5.58.0",
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"

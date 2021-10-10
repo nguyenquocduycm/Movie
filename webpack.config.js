@@ -20,6 +20,11 @@ var config = {
                 options: {
                     presets: ["react", "es2015", "stage-2"]
                 }
+            },
+            {
+                test: /\.css$/ ,
+                exclude: /node_modules/,
+                use: ["style-loader", "css-loader"]
             }
         ]
     },
@@ -28,11 +33,11 @@ var config = {
         compress: true,
         port: 8080,
     },
-
-    // devServer: {
-    //         host: '192.168.1.4',
-    //         port: 8080,
-    // }
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
 };
 
 module.exports = config;
