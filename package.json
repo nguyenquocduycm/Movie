@@ -4,6 +4,7 @@
   "description": "movie film",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack serve",
     "start": "npm run build",
     "heroku-postbuild": "webpack --config ./webpack.config.js --progress",
     "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production",
