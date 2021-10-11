@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
+    "postinstall": "webpack -p",
     "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production",
     "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
   },
