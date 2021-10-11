@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production",
-    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+    "build:prod": "webpack && copy src\\index.html dist\\index.html"
   },
   "author": "Quoc Duy Nguyen",
   "license": "ISC",
