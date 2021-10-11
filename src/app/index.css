@@ -8,7 +8,7 @@ header{
   position: relative;
 }
 
-.decriptions {
+#decriptions {
   color:rgb(242, 247, 221);
   position: absolute;
   font-size: 60px;
@@ -23,7 +23,7 @@ header{
   transform: translateY(50%);
 }
 
-.decriptions02{
+#decriptions02{
   color:rgb(222, 219, 241);
   position: absolute;
   font-size: 28px;
@@ -78,15 +78,15 @@ header{
 div#dropdownLanguage{
   display: none;
   position: absolute;
-  right: 200px;
+  right: 240px;
   top: 47px;
-  width: 110px;
+  width: 120px;
   background-color: black;
 }
 
 #dropdownLanguage>p{
   display: block;
-  width: 110px;
+  width: 120px;
   padding: 7px;
   cursor: pointer;
   text-align: center;
@@ -131,3 +131,75 @@ img{
   width:inherit;
   /* height: inherit; */
 }
+
+#container{
+  width: 30%;
+  position: absolute;
+  display: none;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(19, 18, 18,0.8);
+}
+
+.fromlogin {
+  margin: 0;
+  padding: 10%;
+  padding-bottom: 0;
+}
+.signup{
+  padding: 10%;
+  display: flex;
+}
+.signup>p{
+  color: aliceblue;
+  margin-left: 5%;
+  margin-right: 5px;
+}
+
+.fromlogin>p{
+  color: rgb(253, 253, 253);
+  width: inherit;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.fromlogin>div{
+  text-align: center;
+}
+
+.checkboxAndForgotPass {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+}
+
+.checkboxAndForgotPass>div {
+  display: flex;
+}
+
+.checkboxAndForgotPass>div>label {
+  color: aliceblue;
+  padding-left: 5px;
+}
+
+
+.inputLogin{
+   width: 90%;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.btnLogin{
+  width: 90%;
+  color: rgb(252, 248, 248);
+  background-color: brown;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
