@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build",
-    "heroku-postbuild": "webpack --config ./webpack.prod.config.js --progress",
+    "heroku-postbuild": "webpack --config ./webpack.config.js --progress",
     "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production",
     "build:prod": "webpack && copy src\\index.html dist\\index.html"
   },
