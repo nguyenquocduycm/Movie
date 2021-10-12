@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import {Router, Route, browserHistory, IndexRoute} from "react-router";
 import './index.css';
 
 class App extends React.Component {
@@ -12,7 +13,7 @@ class App extends React.Component {
         alert("Sắp có rồi!")
     }
     render() {
-        return (            
+        return (    
             <header>
                  <nav className ="navbar">
                      <span className="fristitem">

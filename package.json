@@ -7,7 +7,7 @@
     "dev": "webpack serve",
     "start": "npm run build",
     "heroku-postbuild": "webpack --config ./webpack.config.js --progress",
-    "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production",
+    "build": "webpack && copy src\\index.html dist\\index.html && webpack-dev-server  --mode development --mode production --history-api-fallback",
     "build:prod": "webpack && copy src\\index.html dist\\index.html"
   },
   "author": "Quoc Duy Nguyen",
@@ -16,6 +16,7 @@
     "css-selector": "^0.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router": "^5.2.1",
     "style-selector": "^2.0.5"
   },
   "devDependencies": {
