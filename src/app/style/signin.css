@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+}
+
+header{
+  height:100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#decriptions {
+  color:rgb(242, 247, 221);
+  position: absolute;
+  font-size: 60px;
+  font-family: 'Courier New', monospace;
+  font-weight: 1000;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 1.1;
+  word-wrap: break-word;
+  text-align: center;
+  top: 25%;
+  transform: translateY(50%);
+}
+
+#decriptions02{
+  color:rgb(222, 219, 241);
+  position: absolute;
+  font-size: 28px;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  top: 62%;
+  transform: translateY(50%);
+}
+
+.navbar {
+  position: absolute;
+  color: rgb(222, 219, 241);
+  padding: 15px;
+  right: 5%;
+}
+
+.itemNavbar {
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.linktoSignup {
+  color: rgb(222, 219, 241);
+  text-decoration: none;
+}
+
+.linktoSignup:hover {
+  color:rgb(3, 3, 3);
+  text-decoration: none;
+}
+
+#itemNavbarLanguage{
+  /* display: inline-block; */
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.itemNavbar:hover{
+  color:rgb(3, 3, 3);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.fristitem:hover #itemNavbarLanguage{
+  color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.fristitem:hover #dropdownLanguage
+{
+  display: block;
+}
+
+div#dropdownLanguage{
+  display: none;
+  position: absolute;
+  right: 240px;
+  top: 47px;
+  width: 120px;
+  background-color: black;
+}
+
+#dropdownLanguage>p{
+  display: block;
+  width: 120px;
+  padding: 7px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 5px;
+  
+}
+
+#dropdownLanguage>p:hover{
+  border: 1px solid rgb(247, 246, 245);
+  border-radius: 5px;
+}
+
+#backgroundloader {
+  overflow: hidden;
+  height:100vh;
+  width: 100vw;
+}
+
+.listImage {
+  width: 400vw;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.item {
+  float: left;
+  height:100vh;
+  width: 100vw;
+}
+
+
+@-webkit-keyframes slide {
+  17% {margin-left: 0vw;}
+  25% {margin-left: -100vw;}
+  42% {margin-left: -100vw}
+  50% {margin-left: -200vw;}
+  67% {margin-left: -200vw;}
+  75% {margin-left: -300vw;}
+  90% {margin-left: -300vw;}
+}
+
+img{
+  width:inherit;
+  /* height: inherit; */
+}
+
+#container{
+  width: 30%;
+  position: absolute;
+  display: none;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(19, 18, 18,0.8);
+}
+
+.fromlogin {
+  margin: 0;
+  padding: 10%;
+  padding-bottom: 0;
+}
+.signup{
+  padding: 10%;
+  display: flex;
+}
+.signup>p{
+  color: aliceblue;
+  margin-left: 5%;
+  margin-right: 5px;
+}
+
+.fromlogin>p{
+  color: rgb(253, 253, 253);
+  width: inherit;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.fromlogin>div{
+  text-align: center;
+}
+
+.checkboxAndForgotPass {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: space-between;
+}
+
+.checkboxAndForgotPass>div {
+  display: flex;
+}
+
+.checkboxAndForgotPass>div>label {
+  color: aliceblue;
+  padding-left: 5px;
+}
+
+
+.inputLogin{
+   width: 90%;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.btnLogin{
+  width: 90%;
+  color: rgb(252, 248, 248);
+  background-color: brown;
+  border-radius: 8px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
